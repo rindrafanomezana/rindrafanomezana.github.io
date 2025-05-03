@@ -2,40 +2,36 @@
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-  
-  <!-- Left side: Site title -->
-  <div class="nav-left" style="display: flex; align-items: center;">
-    <a class="masthead__menu-item masthead__menu-item--lg persist" href="{{ base_path }}/">{{ site.title }}</a>
-  </div>
+    <nav id="site-nav" class="greedy-nav">
 
-  <!-- Right side: Navigation and hamburger -->
-  <div class="nav-right" style="display: flex; align-items: center;">
-    <!-- Navigation Links -->
-    <ul class="visible-links" style="display: flex; gap: 1rem; margin: 0;">
-      {% for link in site.data.navigation.main %}
-        {% if link.url contains 'http' %}
-          {% assign domain = '' %}
-        {% else %}
-          {% assign domain = base_path %}
-        {% endif %}
-        <li class="masthead__menu-item">
-          <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+      <!-- Site title on the left -->
+      <ul class="visible-links">
+        <li class="masthead__menu-item masthead__menu-item--lg persist">
+          <a href="{{ base_path }}/">{{ site.title }}</a>
         </li>
-      {% endfor %}
-    </ul>
+      </ul>
 
-    <!-- Hamburger button for mobile toggle -->
-    <button class="greedy-nav__toggle" aria-label="Toggle navigation" style="margin-left: 1rem;">
-      <div class="navicon"></div>
-    </button>
-  </div>
+      <!-- Hamburger toggle -->
+      <button class="greedy-nav__toggle" aria-label="Toggle navigation">
+        <div class="navicon"></div>
+      </button>
 
-  <!-- Overflow hidden links for GreedyNav -->
-  <ul class="hidden-links hidden"></ul>
-</nav>
+      <!-- Nav links on the right -->
+      <ul class="visible-links right-nav" style="margin-left: auto;">
+        {% for link in site.data.navigation.main %}
+          {% if link.url contains 'http' %}
+            {% assign domain = '' %}
+          {% else %}
+            {% assign domain = base_path %}
+          {% endif %}
+          <li class="masthead__menu-item">
+            <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
 
-    </div>
+      <!-- Hidden links for overflow -->
+      <ul class="hidden-links hidden"></ul>
+    </nav>
   </div>
 </div>
