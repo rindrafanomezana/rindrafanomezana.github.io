@@ -1,6 +1,8 @@
 ---
 permalink: /
 custom_class: about-page
+layout: page
+classes: wide-page
 title:
 author_profile: false
 redirect_from: 
@@ -60,14 +62,6 @@ redirect_from:
   font-size: 1.5em;
 }
 
-/* Default: show all images (desktop and tablet) 
-.hero-images-row img {
-  flex: 1;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}*/
-
 /* On mobile: show only the first image */
 @media (max-width: 767px) {
   .hero-images-row img {
@@ -78,6 +72,15 @@ redirect_from:
     display: block;
     flex: 1;
   }
+}
+
+/* Only on the About page (wide-page) override the default .page width */
+.wide-page .page {
+  width: 100% !important;
+  max-width: 100% !important;
+  float: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 </style>
