@@ -68,7 +68,7 @@ redirect_from:
   object-fit: cover;
 }
 
-/* On mobile: show only the first image */
+/* On mobile: show only the first image 
 @media (max-width: 767px) {
   .hero-images-row img {
     display: none;
@@ -78,7 +78,7 @@ redirect_from:
     display: block;
     flex: 1;
   }
-}
+}*/
 
 </style>
 
