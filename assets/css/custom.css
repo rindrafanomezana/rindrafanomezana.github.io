@@ -90,3 +90,37 @@
   }
 } */
 
+/* General navicon style */
+.greedy-nav button {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.greedy-nav .navicon,
+.greedy-nav .navicon::before,
+.greedy-nav .navicon::after {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--navicon-color);
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+/* Position the 3 lines */
+.greedy-nav .navicon::before,
+.greedy-nav .navicon::after {
+  position: absolute;
+  left: 0;
+}
+
+.greedy-nav .navicon::before {
+  top: -6px;
+}
+
+.greedy-nav .navicon::after {
+  top: 6px;
+}
