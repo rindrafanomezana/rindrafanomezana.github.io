@@ -124,3 +124,15 @@
 .greedy-nav .navicon::after {
   top: 6px;
 }
+
+/* burger toggle */
+#theme-toggle-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#theme-toggle i {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
