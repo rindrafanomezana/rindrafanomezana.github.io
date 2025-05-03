@@ -33,10 +33,10 @@ authors: []
 }
 
 .hero-images-row img {
+  flex: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: none;
 }
 
 .hero-overlay {
@@ -58,21 +58,6 @@ authors: []
 .hero-overlay p {
   font-size: 1.5em;
 }
-
-/* Show all 3 images on wider screens */
-@media (min-width: 768px) {
-  .hero-images-row img {
-    display: block;
-    flex: 1;
-  }
-}
-
-/* Show only one image on small screens */
-@media (max-width: 767px) {
-  .hero-images-row img:first-child {
-    display: block;
-  }
-}
 </style>
 
 <script>
@@ -89,10 +74,10 @@ document.addEventListener("DOMContentLoaded", function () {
     return `/images/gallery/image_${num}.jpg`;
   }
 
-  // Always load 3 images, only one will show on small screens
   document.getElementById("hero-img-1").src = getUniqueImage();
   document.getElementById("hero-img-2").src = getUniqueImage();
   document.getElementById("hero-img-3").src = getUniqueImage();
 });
 </script>
+
 
