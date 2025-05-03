@@ -3,38 +3,31 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-        
-        <!-- Left: Site Title -->
+      <nav id="site-nav" class="greedy-nav" style="display: flex; justify-content: space-between; align-items: center;">
+        <button><div class="navicon"></div></button>
+        <!-- Left side: Site Title -->
         <ul class="visible-links" style="display: flex; margin: 0;">
           <li class="masthead__menu-item masthead__menu-item--lg persist">
             <a href="{{ base_path }}/">{{ site.title }}</a>
           </li>
         </ul>
 
-        <!-- Right: Nav Links and Toggle Button -->
-        <div style="display: flex; align-items: center;">
-          <!-- ☰ Button (GreedyNav toggle) -->
-          <button class="greedy-nav__toggle" aria-label="Toggle menu">
-            <div class="navicon"></div>
-          </button>
+        <!-- Right side: Nav Links + Theme Toggle -->
+        <ul class="visible-links nav-right" style="display: flex; gap: 1rem; margin: 0;">
+          {% for link in site.data.navigation.main %}
+            {% if link.url contains 'http' %}
+              {% assign domain = '' %}
+            {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
+            <li class="masthead__menu-item persist"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
+            <a><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+          </li>
+        </ul>
 
-          <ul class="visible-links nav-right" style="display: flex; gap: 1rem; margin: 0;">
-            {% for link in site.data.navigation.main %}
-              {% if link.url contains 'http' %}
-                {% assign domain = '' %}
-              {% else %}
-                {% assign domain = base_path %}
-              {% endif %}
-              <li class="masthead__menu-item persist"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
-            {% endfor %}
-            <li id="theme-toggle" class="masthead__menu-item persist tail">
-              <a><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Hidden Links -->
+        <!-- Hidden links -->
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
