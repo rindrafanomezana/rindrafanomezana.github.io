@@ -3,36 +3,47 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav" style="display: flex; justify-content: space-between; align-items: center;">
-        <!-- Left side: Site Title -->
-        <ul class="visible-links" style="display: flex; margin: 0;">
+
+      <nav id="site-nav" class="greedy-nav" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+        
+        <!-- Left: Site Title -->
+        <ul class="visible-links left-links" style="display: flex; margin: 0;">
           <li class="masthead__menu-item masthead__menu-item--lg persist">
             <a href="{{ base_path }}/">{{ site.title }}</a>
           </li>
         </ul>
 
-        <!-- Right side: Nav Links + Theme Toggle -->
-	<button>
+        <!-- Hamburger button (must be before .visible-links) -->
+        <button>
           <div class="navicon"></div>
         </button>
-        <ul class="visible-links nav-right" style="display: flex; gap: 1rem; margin: 0;">
+
+        <!-- Right: Nav links -->
+        <ul class="visible-links right-links" style="display: flex; gap: 1rem; margin: 0;">
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item persist"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item">
+              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+            </li>
           {% endfor %}
-          <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
-          </li>
         </ul>
 
-        <!-- Hidden links -->
+        <!-- Always visible theme toggle -->
+        <div id="theme-toggle-wrapper" style="margin-left: 1rem;">
+          <a id="theme-toggle" class="masthead__menu-item" style="display: inline-block;">
+            <i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i>
+          </a>
+        </div>
+
+        <!-- GreedyNav uses this to overflow hidden links -->
         <ul class="hidden-links hidden"></ul>
+
       </nav>
+
     </div>
   </div>
 </div>
-
