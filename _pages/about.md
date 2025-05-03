@@ -51,12 +51,12 @@ authors: []
 }
 
 .hero-overlay h1 {
-  font-size: 3em;
+  font-size: 4em;
   margin: 0;
 }
 
 .hero-overlay p {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 </style>
 
