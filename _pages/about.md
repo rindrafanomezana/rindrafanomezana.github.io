@@ -25,7 +25,7 @@ redirect_from:
 .hero-wrapper {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   overflow: hidden;
 }
 
