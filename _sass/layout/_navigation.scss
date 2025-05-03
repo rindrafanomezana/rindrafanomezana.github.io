@@ -212,6 +212,7 @@
       &:first-child {
         font-weight: lighter;
         text-wrap: wrap;
+        font-size: 20px; /*added to make phone text bigger in navbar*/
 
         a {
           margin-left: 0;
