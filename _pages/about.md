@@ -60,15 +60,15 @@ redirect_from:
   font-size: 1.5em;
 }
 
-/* Default: show all images (desktop and tablet) */
+/* Default: show all images (desktop and tablet) 
 .hero-images-row img {
   flex: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+}*/
 
-/* On mobile: show only the first image 
+/* On mobile: show only the first image */
 @media (max-width: 767px) {
   .hero-images-row img {
     display: none;
@@ -78,7 +78,7 @@ redirect_from:
     display: block;
     flex: 1;
   }
-}*/
+}
 
 </style>
 
