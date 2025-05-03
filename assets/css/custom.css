@@ -139,11 +139,11 @@
 /* Text size on the phone */
 @media (max-width: 768px) {
   .masthead__menu-item a {
-    font-size: 14px !important;  /* Adjust size as needed */
+    font-size: 20px !important;  /* Adjust size as needed */
   }
 
   .masthead__menu-item--lg a {
-    font-size: 16px !important;  /* For the site title */
+    font-size: 20px !important;  /* For the site title */
   }
 }
 
