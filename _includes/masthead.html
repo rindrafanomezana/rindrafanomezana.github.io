@@ -2,36 +2,34 @@
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
-    <nav id="site-nav" class="greedy-nav">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
 
-      <!-- Site title on the left -->
-      <ul class="visible-links">
-        <li class="masthead__menu-item masthead__menu-item--lg persist">
-          <a href="{{ base_path }}/">{{ site.title }}</a>
-        </li>
-      </ul>
+        <!-- Hamburger button (mobile menu toggle) -->
+        <button class="greedy-nav__toggle" aria-label="Toggle navigation">
+          <div class="navicon"></div>
+        </button>
 
-      <!-- Hamburger toggle -->
-      <button class="greedy-nav__toggle" aria-label="Toggle navigation">
-        <div class="navicon"></div>
-      </button>
-
-      <!-- Nav links on the right -->
-      <ul class="visible-links right-nav" style="margin-left: auto;">
-        {% for link in site.data.navigation.main %}
-          {% if link.url contains 'http' %}
-            {% assign domain = '' %}
-          {% else %}
-            {% assign domain = base_path %}
-          {% endif %}
-          <li class="masthead__menu-item">
-            <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+        <!-- Site title (always shown) -->
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg persist">
+            <a href="{{ base_path }}/">{{ site.title }}</a>
           </li>
-        {% endfor %}
-      </ul>
+        </ul>
 
-      <!-- Hidden links for overflow -->
-      <ul class="hidden-links hidden"></ul>
-    </nav>
+        <!-- Navigation links (right-aligned) -->
+        <ul class="visible-links" style="margin-left: auto;">
+          {% for link in site.data.navigation.main %}
+            {% assign domain = link.url contains 'http' | ternary: '', base_path %}
+            <li class="masthead__menu-item">
+              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+
+        <!-- Overflow links (handled by GreedyNav script) -->
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
   </div>
 </div>
