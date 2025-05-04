@@ -147,3 +147,17 @@
   }
 }
 
+/* Force the hamburger button to always appear */
+.hamburger-button {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Prevent .hidden class from affecting it */
+.hamburger-button.hidden {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
