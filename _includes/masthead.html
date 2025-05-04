@@ -7,7 +7,7 @@
         
         <!-- Hamburger button for mobile toggle -->
         <button>
-          <div class="navicon"></div>
+          <div class="" count="3"></div>
         </button>
 
         <!-- Nav Links -->
@@ -15,9 +15,11 @@
           <!-- Site title on the left -->
           <li class="masthead__menu-item masthead__menu-item--lg persist">
             <a href="{{ base_path }}/">{{ site.title }}</a>
-          </li>
+          </li> </ul>
 
-          <!-- Navigation links on the right -->
+        <!-- Overflow menu handled by GreedyNav -->
+        <ul class="hidden-links hidden">
+        <!-- Navigation links on the right -->
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
@@ -41,8 +43,7 @@
             </a>
           </div> <!--This is the button to chose theme-->
 
-        <!-- Overflow menu handled by GreedyNav -->
-        <ul class="hidden-links hidden"></ul>
+        </ul>
       </nav>
     </div>
   </div>
