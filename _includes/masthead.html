@@ -6,7 +6,7 @@
       <nav id="site-nav" class="greedy-nav">
         
         <!-- Hamburger button for mobile toggle -->
-        <button class="greedy-nav__toggle" aria-label="Menu" count="3">
+        <button>
           <div class="navicon"></div>
         </button>
 
@@ -15,11 +15,9 @@
           <!-- Site title on the left -->
           <li class="masthead__menu-item masthead__menu-item--lg persist">
             <a href="{{ base_path }}/">{{ site.title }}</a>
-          </li> </ul>
+          </li>
 
-        <!-- Overflow menu handled by GreedyNav -->
-        <ul class="hidden-links hidden">
-        <!-- Navigation links on the right -->
+          <!-- Navigation links on the right -->
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
@@ -43,7 +41,8 @@
             </a>
           </div> <!--This is the button to chose theme-->
 
-        </ul>
+        <!-- Overflow menu handled by GreedyNav -->
+        <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>
