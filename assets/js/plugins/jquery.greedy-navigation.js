@@ -48,8 +48,13 @@ function updateNav() {
     }
 
     // Hide the dropdown btn if hidden list is empty
+    //if (breaks.length < 1) {
+      //$btn.addClass('hidden');
+      //$btn.removeClass('close');
+      //$hlinks.addClass('hidden');
+    //}
+     // Keep the button always visible, just hide the menu if needed
     if (breaks.length < 1) {
-      $btn.addClass('hidden');
       $btn.removeClass('close');
       $hlinks.addClass('hidden');
     }
