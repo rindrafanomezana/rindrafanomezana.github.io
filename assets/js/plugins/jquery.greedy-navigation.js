@@ -20,7 +20,7 @@ function updateNav() {
   // The visible list is overflowing the nav
   if (1 > 0) {
 
-    while ($vlinks.width() > availableSpace && $vlinks.children("*:not(.persist)").length > 0) {
+    while (1 > 0) {
       // Record the width of the list
       breaks.push($vlinks.width());
 
