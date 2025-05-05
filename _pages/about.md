@@ -11,7 +11,7 @@ redirect_from:
 ---
 <div class="hero-wrapper">
   <div class="hero-overlay">
-    <h1>WELCOME</h1>
+    <h1>BONJOUR HI</h1>
     <p>Welcome to my personal page</p>
   </div>
   <div class="hero-images-row">
@@ -54,7 +54,7 @@ redirect_from:
 }
 
 .hero-overlay h1 {
-  font-size: 3em;
+  font-size: 4em;
   margin: 0;
 }
 
