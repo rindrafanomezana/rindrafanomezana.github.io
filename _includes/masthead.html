@@ -24,7 +24,9 @@
 
         <!-- Overflow menu handled by GreedyNav -->
         <ul class="hidden-links hidden">
-          <a href="{{ site.url }}/">Home</a>
+          <li class="masthead__menu-item">
+              <a href="{{ site.url }}/">Home</a>
+          </li>
           <!-- Navigation links on the right -->
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
