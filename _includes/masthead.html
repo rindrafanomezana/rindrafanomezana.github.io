@@ -31,6 +31,9 @@
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
+            <li class="masthead__menu-item masthead__menu-item--lg persist">
+              <a href="{{ base_path }}/">Home</a>
+            </li>
             <li class="masthead__menu-item">
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
