@@ -148,18 +148,11 @@
 }
 
 /* Always show the hamburger button */
-.greedy-nav__toggle.always-visible {
+/* Force hamburger button to always show */
+.greedy-nav__toggle {
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
-  position: relative;
-  z-index: 1000; /* Ensure it's clickable */
 }
 
-/* Prevent JS from hiding it */
-.greedy-nav__toggle.always-visible.hidden {
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
 
