@@ -150,9 +150,15 @@
 /* Always show the hamburger button */
 /* Force hamburger button to always show */
 .greedy-nav__toggle {
-  display: block !important;
+  display: inline-block !important;
   visibility: visible !important;
   opacity: 1 !important;
+  pointer-events: auto !important;
 }
+
+.greedy-nav__toggle.hidden {
+  display: inline-block !important;
+}
+
 
 
