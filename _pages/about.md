@@ -54,7 +54,7 @@ redirect_from:
 }
 
 .hero-overlay h1 {
-  font-size: 4em;
+  font-size: 3em;
   margin: 0;
 }
 
