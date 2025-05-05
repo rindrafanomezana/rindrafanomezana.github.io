@@ -5,7 +5,7 @@
 *
 */
 
-var $nav = $('#site-nav');
+var $nav = $('#site-nav'); 
 var $btn = $('#site-nav button');
 var $vlinks = $('#site-nav .visible-links');
 var $vlinks_persist_tail = $vlinks.children("*.persist.tail");
