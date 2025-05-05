@@ -140,20 +140,18 @@ $(document).ready(function () {
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 
-     // === Force the hamburger button to stay visible ===
-  const toggleBtn = document.querySelector(".greedy-nav__toggle");
-  if (toggleBtn) {
-    toggleBtn.classList.remove("hidden");
+      // === Force hamburger to always show and stay visible ===
+  var $toggleBtn = $(".greedy-nav__toggle");
 
-    // Keep it un-hidden even if JS tries to hide it again
-    const observer = new MutationObserver(() => {
-      toggleBtn.classList.remove("hidden");
-    });
+  if ($toggleBtn.length) {
+    $toggleBtn.removeClass("hidden").show();
 
-    observer.observe(toggleBtn, {
-      attributes: true,
-      attributeFilter: ["class"],
-    });
+    // Observe the greedy-nav logic and counteract any hiding
+    setInterval(function () {
+      if ($toggleBtn.hasClass("hidden") || !$toggleBtn.is(":visible")) {
+        $toggleBtn.removeClass("hidden").show();
+      }
+    }, 200); // Run every 200ms to counteract hiding
   }
 
 
