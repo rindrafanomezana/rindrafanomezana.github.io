@@ -60,6 +60,7 @@ redirect_from:
 
 .hero-overlay p {
   font-size: 1.5em;
+  margin-top: 0;
 }
 
 /* On mobile: show only the first image */
