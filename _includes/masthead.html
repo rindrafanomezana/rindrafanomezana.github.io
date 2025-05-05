@@ -24,6 +24,7 @@
 
         <!-- Overflow menu handled by GreedyNav -->
         <ul class="hidden-links hidden">
+          <a href="https://rindrafanomezana.github.io/">Home</a>
           <!-- Navigation links on the right -->
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
@@ -31,7 +32,6 @@
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-          <a href="https://rindrafanomezana.github.io/">Home</a>
             <li class="masthead__menu-item">
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
