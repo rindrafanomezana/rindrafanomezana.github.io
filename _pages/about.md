@@ -72,6 +72,16 @@ redirect_from:
     display: block;
     flex: 1;
   }
+  
+  .hero-overlay h1 {
+  font-size: 2em;
+  margin: 0;
+  }
+
+  .hero-overlay p {
+    font-size: 1em;
+  }
+  
 }
 
 /* Only on the About page (wide-page) override the default .page width */
