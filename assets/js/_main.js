@@ -140,4 +140,21 @@ $(document).ready(function () {
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 
+     // === Force the hamburger button to stay visible ===
+  const toggleBtn = document.querySelector(".greedy-nav__toggle");
+  if (toggleBtn) {
+    toggleBtn.classList.remove("hidden");
+
+    // Keep it un-hidden even if JS tries to hide it again
+    const observer = new MutationObserver(() => {
+      toggleBtn.classList.remove("hidden");
+    });
+
+    observer.observe(toggleBtn, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+  }
+
+
 });
