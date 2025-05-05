@@ -96,6 +96,7 @@
   border: none;
   padding: 10px;
   cursor: pointer;
+  diplay: inline-block !important;
 }
 
 .greedy-nav .navicon,
