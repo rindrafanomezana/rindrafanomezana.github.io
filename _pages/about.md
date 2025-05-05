@@ -44,7 +44,7 @@ redirect_from:
 
 .hero-overlay {
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -79,7 +79,7 @@ redirect_from:
   }
 
   .hero-overlay p {
-    font-size: 1em;
+    font-size: 1.5em;
   }
   
 }
