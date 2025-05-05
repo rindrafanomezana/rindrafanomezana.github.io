@@ -47,13 +47,8 @@ function updateNav() {
       breaks.pop();
     }
 
-    // Hide the dropdown btn if hidden list is empty
-    if (breaks.length < 1) {
-      $btn.addClass('hidden');
-      $btn.removeClass('close');
-      $hlinks.addClass('hidden');
-    }
-  }
+    // Always show the hamburger menu
+  $btn.removeClass('hidden');
 
   // Keep counter updated
   $btn.attr("count", breaks.length);
