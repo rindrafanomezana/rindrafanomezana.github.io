@@ -20,8 +20,11 @@ Education
 
 Work experience
 ======
-* 2022 : Modeling engineer
-  * CIRAD / INRAE, Montpellier - France  
+* 2022 : Modelling engineer
+  * CIRAD / INRAE, Montpellier - France
+    
+* 2021 : Modelling intern 
+  * JUNIA ISA, Lille - France  
 
 * 2019-2020 : Monitoring and evaluation officer  
   * Nairobi Convention, Madagascar  
