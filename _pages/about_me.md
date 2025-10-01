@@ -8,9 +8,9 @@ redirect_from:
 ---
 
 
-I am PhD candidate at UQÀM in Environmental Sciences working in <a href="https://elisefilotas.ca/fr/maison/" target="_blank" rel="noopener noreferrer">Filotas lab</a> and I am working on forest ecosystem modeling and disturbance dynamics. My doctoral research focuses on optimizing suppression activities for spruce budworm outbreaks in Quebec, using machine learning algorithms and spatio-temporal model to assess forest landscape vulnerability and simulate forest dynamics with climate change.
+I am PhD candidate at UQÀM in Environmental Sciences working under the supervision of <a href="https://elisefilotas.ca/fr/maison/" target="_blank" rel="noopener noreferrer">Élise Filotas</a>, <a href="https://www.cef-cfr.ca/pmwiki.php?n=Membres.DanielKneeshaw" target="_blank" rel="noopener noreferrer">Dan Kneeshaw </a> and <a href="https://www.cef-cfr.ca/pmwiki.php?n=Membres.MathieuBouchard" target="_blank" rel="noopener noreferrer">Mathieu Bouchard</a>. I am working on forest ecosystem modeling and disturbance dynamics. My doctoral research focuses on optimizing suppression activities for spruce budworm outbreaks in Quebec, using machine learning algorithms and spatio-temporal model to assess forest landscape vulnerability and simulate forest dynamics with climate change.
 
-Here is a quick preview of my CV!  
+Here is a quick preview of my resume!  
 
 Education
 ======
@@ -35,7 +35,7 @@ Skills
 * Machine learning 
 * Parallel computing
 
-Programming language
+Programming languages
 ======
 * R
 * python
