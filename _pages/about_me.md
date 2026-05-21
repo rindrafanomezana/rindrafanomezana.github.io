@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-I am PhD candidate at UQÀM in Environmental Sciences working under the supervision of <a href="https://elisefilotas.ca/fr/maison/" target="_blank" rel="noopener noreferrer">Élise Filotas</a>, <a href="https://www.cef-cfr.ca/pmwiki.php?n=Membres.DanielKneeshaw" target="_blank" rel="noopener noreferrer">Dan Kneeshaw </a> and <a href="https://www.cef-cfr.ca/pmwiki.php?n=Membres.MathieuBouchard" target="_blank" rel="noopener noreferrer">Mathieu Bouchard</a>. I am working on forest ecosystem modeling and disturbance dynamics. My doctoral research focuses on optimizing suppression activities for spruce budworm outbreaks in Quebec, using machine learning algorithms and spatio-temporal model to assess forest landscape vulnerability and simulate forest dynamics with climate change.
+I am PhD candidate at UQÀM in Environmental Sciences working under the supervision of <a href="https://www.cef-cfr.ca/pmwiki.php?n=Membres.MathieuBouchard" target="_blank" rel="noopener noreferrer">Mathieu Bouchard</a>,  <a href="https://www.cef-cfr.ca/pmwiki.php?n=Membres.DanielKneeshaw" target="_blank" rel="noopener noreferrer">Dan Kneeshaw </a>, and <a href="https://elisefilotas.ca/fr/maison/" target="_blank" rel="noopener noreferrer">Élise Filotas</a>. I am working on forest ecosystem modeling and disturbance dynamics. My doctoral research focuses on optimizing suppression activities for spruce budworm outbreaks in Quebec, using machine learning algorithms and spatio-temporal model to assess forest landscape vulnerability and simulate forest dynamics with climate change.
 
 Here is a quick preview of my resume!  
 
@@ -24,28 +24,29 @@ Work experience
   * CIRAD / INRAE, Montpellier - France
     
 * 2021 : Modelling intern 
-  * JUNIA ISA, Lille - France  
+  * JUNIA ISA, Lille - France
 
 * 2019-2020 : Monitoring and evaluation officer  
-  * Nairobi Convention, Madagascar  
-
+  * Nairobi Convention, Madagascar
+    
 * 2018 : Undergraduate student intern  
   * WWF, Morondava - Madagascar  
   
 Skills
 ======
-* Data analysis
+* Data analysis and visualization
 * Machine learning 
 * Parallel computing
 
-Programming languages
+Programming languages & Softwares
 ======
 * R
-* python
 * html
 * SQL
 * shell scripting
+* python
+* QGIS
 
 Community Involvement
 ======
-* [IKALA STEM](https://www.ikalastem.org/) permanent member
+* [IKALA STEM](https://www.ikalastem.org/) : Permanent member since 2019, Communication Officer (2026-2028)
