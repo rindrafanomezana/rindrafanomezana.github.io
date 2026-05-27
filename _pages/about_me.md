@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-I am PhD candidate at UQÀM in Environmental Sciences working under the supervision of <a href="https://www.cef-cfr.ca/pmwiki.php?n=Membres.MathieuBouchard" target="_blank" rel="noopener noreferrer">Mathieu Bouchard</a> (Université Laval), and <a href="https://www.cef-cfr.ca/pmwiki.php?n=Membres.DanielKneeshaw" target="_blank" rel="noopener noreferrer">Daniel Kneeshaw (UQAM). I am working on forest ecosystem modeling and disturbance dynamics. My doctoral research focuses on optimizing suppression activities for spruce budworm outbreaks in Quebec, using machine learning algorithms and spatio-temporal model to assess forest landscape vulnerability and simulate forest dynamics with climate change.
+I am PhD candidate at UQÀM in Environmental Sciences working under the supervision of <a href="https://www.cef-cfr.ca/pmwiki.php?n=Membres.MathieuBouchard" target="_blank" rel="noopener noreferrer">Mathieu Bouchard</a> (Université Laval), and <a href="https://www.cef-cfr.ca/pmwiki.php?n=Membres.DanielKneeshaw" target="_blank" rel="noopener noreferrer">Daniel Kneeshaw</a> (UQAM). I am working on forest ecosystem modeling and disturbance dynamics. My doctoral research focuses on optimizing suppression activities for spruce budworm outbreaks in Quebec, using machine learning algorithms and spatio-temporal model to assess forest landscape vulnerability and simulate forest dynamics with climate change.
 
 Here is a quick preview of my resume!  
 
